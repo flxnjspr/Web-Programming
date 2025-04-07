@@ -1,0 +1,203 @@
+/* General body styling */
+body {
+    /* Setting the font for the entire page */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* Adjusting the line spacing to make the text easier to read */
+    line-height: 1.6;
+    /* Setting the background color of the body to a deep blue */
+    background: #001524; /* Solid deep blue background */
+    /* Setting the text color to a light yellow */
+    color: #FFECDB; /* Light yellow for text */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+}
+
+/* Container for the page */
+.container {
+    width: 85%; /* Limiting the container width to 85% of the screen */
+    margin: 0 auto; /* Centering the container */
+}
+
+/* Header Styling */
+header {
+    /* Giving the header a solid teal background */
+    background: #15616D; /* Solid teal background */
+    /* Setting the text color to light yellow */
+    color: #FFECDB; /* Light yellow text */
+    /* Adding padding inside the header for spacing */
+    padding: 40px 0;
+    /* Center-aligning the text in the header */
+    text-align: center;
+    /* Adding a subtle shadow to the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adding a light peach border at the bottom of the header */
+    border-bottom: 4px solid #FFD1A9; /* Light peach border */
+}
+
+header h1 {
+    /* Setting the font size and weight for the main title */
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0; /* Removing default margin */
+}
+
+/* Navigation Styling */
+nav {
+    /* Giving the navigation bar a solid red background */
+    background: #78290F; /* Solid rich red background */
+    padding: 15px 0; /* Adding padding inside the nav */
+    /* Adding a shadow to the navigation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    /* Removing bullet points from the navigation list */
+    list-style: none;
+    padding: 0; /* Removing padding */
+    margin: 0; /* Removing margin */
+    text-align: center; /* Centering the navigation links */
+}
+
+nav ul li {
+    /* Making the list items appear inline */
+    display: inline;
+    margin-right: 25px; /* Spacing out the items */
+}
+
+nav ul li:last-child {
+    /* Removing the margin from the last list item */
+    margin-right: 0;
+}
+
+nav ul li a {
+    /* Removing underline from the links */
+    text-decoration: none;
+    /* Setting the link text color to light yellow */
+    color: #FFECDB; /* Light yellow text */
+    /* Setting the font size and weight */
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* Adding a smooth transition for the color change on hover */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    /* Changing the color to light peach when hovered */
+    color: #FFD1A9; /* Light peach hover effect */
+}
+
+/* Main Content Styling */
+main {
+    padding: 40px 0; /* Adding padding to the main content */
+    background-color: #FFECDB; /* Light yellow background */
+    margin-top: 20px; /* Adding top margin */
+    border-radius: 8px; /* Rounding the corners */
+    /* Adding a subtle shadow around the main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Section Styling */
+.content-section {
+    margin-bottom: 40px; /* Adding margin at the bottom of each section */
+    padding: 25px; /* Adding padding inside each section */
+    background-color: #FFD1A9; /* Light peach background */
+    border-radius: 8px; /* Rounding the corners of each section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+}
+
+.content-section h2 {
+    /* Setting the font size and color for section titles */
+    font-size: 2.5rem;
+    color: #001524; /* Deep blue for headers */
+    margin-bottom: 15px; /* Adding space below the headers */
+    font-weight: bold; /* Making the header bold */
+}
+
+.content-section p {
+    /* Setting the font size and color for paragraphs */
+    font-size: 1.2rem;
+    color: #636e72; /* Dark gray text for readability */
+    margin-bottom: 15px; /* Adding space below the paragraph */
+}
+
+.content-section ul {
+    padding-left: 25px; /* Adding padding to the left of the list */
+}
+
+.content-section ul li {
+    /* Setting the font size for list items */
+    font-size: 1.1rem;
+    margin-bottom: 12px; /* Adding space between list items */
+    color: #2d3436; /* Dark gray text */
+}
+
+/* Gradient Button Styling */
+button {
+    /* Setting the background color of the button */
+    background-color: #FFD1A9; /* Light peach background */
+    /* Setting the text color of the button */
+    color: #001524; /* Deep blue text */
+    /* Setting the font size for the button */
+    font-size: 1rem;
+    padding: 12px 18px; /* Adding padding inside the button */
+    border: none; /* Removing the border */
+    border-radius: 25px; /* Rounding the corners of the button */
+    cursor: pointer; /* Changing the cursor to a pointer on hover */
+    /* Adding a smooth transition for background color change */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    /* Changing the button background to rich red on hover */
+    background-color: #78290F; /* Rich red on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #15616D; /* Solid teal background */
+    color: #FFECDB; /* Light yellow text */
+    text-align: center; /* Center-aligning the footer text */
+    padding: 20px 0; /* Adding padding inside the footer */
+    font-size: 1rem; /* Setting the font size for the footer text */
+    margin-top: 40px; /* Adding margin at the top of the footer */
+    border-top: 4px solid #FFD1A9; /* Light peach border on top */
+}
+
+footer p {
+    margin: 0; /* Removing margin from the footer text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* For smaller screens, adjust the container width to 90% */
+    .container {
+        width: 90%;
+    }
+
+    /* For smaller screens, align navigation links to the left */
+    nav ul {
+        text-align: left;
+    }
+
+    /* Stack the navigation items vertically on small screens */
+    nav ul li {
+        display: block;
+        margin-bottom: 10px; /* Adding margin between the items */
+    }
+
+    /* Reducing padding for smaller screens */
+    .content-section {
+        padding: 15px;
+    }
+
+    /* Reducing font size for section headers on small screens */
+    .content-section h2 {
+        font-size: 2rem;
+    }
+
+    /* Reducing button padding and font size on small screens */
+    button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}

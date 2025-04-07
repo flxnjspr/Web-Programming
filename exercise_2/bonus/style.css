@@ -1,0 +1,136 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0; /* Removes the default margin from all elements */
+    padding: 0; /* Removes the default padding from all elements */
+    box-sizing: border-box; /* Ensures that padding and borders are included in the element's total width and height */
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif; /* Sets the font family for the body */
+    background-color: #f7f7f7; /* Sets a light gray background color */
+    color: #333; /* Sets a dark gray text color for the body */
+}
+
+/* Header styles */
+header {
+    background-color: #333; /* Sets a dark background color for the header */
+    color: #fff; /* Sets the text color to white */
+    padding: 1rem 0; /* Adds padding at the top and bottom of the header */
+}
+
+header .container {
+    display: flex; /* Uses flexbox layout for positioning */
+    justify-content: space-between; /* Distributes space between the elements */
+    align-items: center; /* Aligns the items vertically in the center */
+    padding: 0 2rem; /* Adds horizontal padding to the container */
+}
+
+header h1 {
+    font-size: 2rem; /* Sets the font size for the header title */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none; /* Removes the default list styling (bullets) */
+    display: flex; /* Uses flexbox to display the navigation links horizontally */
+    gap: 1.5rem; /* Adds spacing between each list item */
+}
+
+nav a {
+    color: #fff; /* Sets the link color to white */
+    text-decoration: none; /* Removes the underline from links */
+    font-size: 1rem; /* Sets the font size for the links */
+    transition: color 0.3s; /* Smooth transition for color change on hover */
+}
+
+nav a:hover {
+    color: #F29057; /* Changes the color of the link when hovered */
+}
+
+nav .button {
+    background-color: #F29057; /* Sets the background color of the button */
+    padding: 0.5rem 1rem; /* Adds padding inside the button */
+    border-radius: 30px; /* Makes the button corners rounded */
+    color: #fff; /* Sets the text color inside the button to white */
+    text-decoration: none; /* Removes the underline from the button link */
+}
+
+nav .button:hover {
+    background-color: #e67e3d; /* Changes the button background color when hovered */
+}
+
+/* Overview section styling */
+#overview {
+    background-color: #fff; /* Sets the background color of the overview section to white */
+    padding: 3rem 2rem; /* Adds padding inside the overview section */
+}
+
+#overview h2 {
+    font-size: 2.5rem; /* Sets the font size for the second-level heading */
+    margin-bottom: 1.5rem; /* Adds space below the heading */
+    color: #E67E3D; /* Sets the heading color */
+    font-weight: 700; /* Makes the heading bold */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the text */
+}
+
+#overview p {
+    font-size: 1.15rem; /* Sets the font size for the paragraph */
+    line-height: 1.8; /* Adjusts the line height for readability */
+    margin-bottom: 1.5rem; /* Adds space below the paragraph */
+    color: #555; /* Sets the paragraph text color to a dark gray */
+    font-weight: 400; /* Sets normal font weight */
+    padding: 10px 0; /* Adds padding to the top and bottom of the paragraph */
+    text-align: justify; /* Justifies the text to both the left and right margins */
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.05); /* Adds a subtle text shadow */
+    max-width: 90%; /* Restricts the width of the paragraph */
+    margin-left: auto; /* Centers the paragraph horizontally */
+    margin-right: auto; /* Centers the paragraph horizontally */
+}
+
+#overview p strong {
+    color: #E67E3D; /* Sets the color of bold text */
+    font-weight: 600; /* Makes the bold text slightly bolder */
+}
+
+#overview h3 {
+    font-size: 2rem; /* Sets the font size for third-level headings */
+    margin-top: 2rem; /* Adds space above the heading */
+    color: #E67E3D; /* Sets the color of the heading */
+    font-weight: 600; /* Makes the heading bold */
+}
+
+/* Image styling */
+#images {
+    padding: 2rem 0; /* Adds padding to the top and bottom of the image section */
+    background-color: #eaeaea; /* Sets a light gray background color for the image section */
+}
+
+.responsive-image {
+    width: 100%; /* Makes the image take up the full width of its container */
+    max-width: 800px; /* Restricts the image width to a maximum of 800px */
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    margin: 1.5rem 0; /* Adds vertical margins around the image */
+    border-radius: 10px; /* Rounds the corners of the image */
+    display: block; /* Makes the image a block element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Sets the footer background color to dark gray */
+    color: #fff; /* Sets the footer text color to white */
+    text-align: center; /* Centers the text inside the footer */
+    padding: 2rem 0; /* Adds padding inside the footer */
+    font-size: 0.9rem; /* Sets the font size to slightly smaller */
+}
+
+footer a {
+    color: #E67E3D; /* Sets the link color inside the footer */
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adds an underline to the link when hovered */
+}

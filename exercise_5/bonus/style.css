@@ -1,0 +1,59 @@
+/* Set the font for the whole page and center all text */
+body {
+    font-family: Arial, sans-serif; /* Use a clean, readable font */
+    text-align: center; /* Center text horizontally */
+    
+    /* Add a background image that covers the whole screen */
+    background: url('images/backgroundImage.jpg') no-repeat center center fixed;
+    background-size: cover; /* Make sure the image always fills the screen */
+
+    margin: 0; /* Remove default margin from the body */
+}
+
+/* Style for the top heading section */
+.heading {
+    background: white; /* White background for contrast */
+    padding: 20px; /* Space around the text */
+    font-size: 24px; /* Make the heading text larger */
+    font-weight: bold; /* Make the text bold */
+    color: red; /* Text color */
+    text-align: center; /* Center the heading text */
+}
+
+/* Container that holds all the buttons in a grid layout */
+.grid-container {
+    display: grid; /* Use CSS grid layout */
+    
+    /* Create 3 equal columns */
+    grid-template-columns: repeat(3, 1fr); 
+    
+    gap: 15px; /* Space between grid items */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the items vertically */
+    padding: 20px; /* Space inside the container */
+}
+
+/* Each grid cell that holds a button */
+.grid-item {
+    display: flex; /* Use flex to center the button */
+    justify-content: center; /* Center the button horizontally */
+}
+
+/* Style for the buttons */
+.btn {
+    background: white; /* Button background color */
+    border: 3px solid black; /* Black border */
+    padding: 20px; /* Space inside the button */
+    text-align: center; /* Center the text inside the button */
+    font-size: 18px; /* Size of the button text */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer; /* Show pointer cursor when hovered */
+    transition: 0.3s; /* Smooth transition for hover effect */
+    width: 100%; /* Button takes full width of its grid cell */
+}
+
+/* What happens when the mouse hovers over a button */
+.btn:hover {
+    background: red; /* Change background to red */
+    color: white; /* Change text color to white */
+}

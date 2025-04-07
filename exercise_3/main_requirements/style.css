@@ -1,0 +1,112 @@
+/* This sets the font for the whole page and centers everything */
+body {
+  font-family: Arial, sans-serif;
+  display: flex; /* Flexbox layout to align children (like images) */
+  justify-content: center; /* Centers the images horizontally */
+  align-items: center; /* Centers the images vertically */
+  height: 100vh; /* Makes the page take the full height of the screen */
+  margin: 0; /* Removes default margins from the page */
+  background-color: #f4f4f4; /* Light gray background for the page */
+  overflow: hidden; /* Disables scrolling on the page */
+}
+
+/* Styling for each image container */
+.image-container {
+  text-align: center; /* Centers the content inside the container */
+  border: 2px solid #ccc; /* Adds a light gray border around the container */
+  border-radius: 15px; /* Rounds the corners of the container */
+  padding: 20px; /* Adds space inside the container */
+  background-color: #fff; /* White background for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
+  transition: transform 0.3s ease; /* Smooth animation when container is hovered */
+  margin: 0 20px; /* Adds space between image containers */
+  width: 450px; /* Sets the container width */
+}
+
+/* Hover effect on the image container */
+.image-container:hover {
+  transform: scale(1.05); /* Slightly enlarges the container when hovered */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow when hovered */
+}
+
+/* General styles for all images */
+.filtered {
+  width: 100%; /* Makes the image take up the full width of the container */
+  height: 300px; /* Fixes the image height */
+  border-radius: 10px; /* Rounds the corners of the image */
+  object-fit: cover; /* Ensures the image covers the space without stretching */
+  transition: filter 0.3s ease-in-out; /* Smooth transition when applying filter */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the image */
+}
+
+/* Hover effect on images to make them a little brighter */
+.filtered:hover {
+  filter: brightness(1.1); /* Increases brightness of the image when hovered */
+}
+
+/* Helix Nebula image effect */
+.helix {
+  filter: drop-shadow(10px 10px 15px red); /* Adds a red shadow to the image */
+}
+
+/* Gargantuan Galaxy image effect */
+.galaxy {
+  border: 5px solid #00FF00; /* Adds a solid green border around the image */
+  position: relative; /* Ensures the pseudo-element is positioned correctly */
+  z-index: 0; /* Keeps the image behind the pseudo-element */
+  overflow: hidden; /* Makes sure the fading effect doesn't go outside the image */
+}
+
+/* Adding a gradient effect over the galaxy image */
+.galaxy::before {
+  content: ''; /* Creates an empty element for the gradient */
+  position: absolute; /* Positions the gradient element on top of the image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.5) 0%, /* Starts with black at the top left */
+    rgba(0, 0, 0, 0) 40% /* Fades out the black towards the bottom right */
+  );
+  z-index: 1; /* Ensures the gradient stays above the image */
+  pointer-events: none; /* Lets clicks pass through the gradient */
+  border-radius: 10px; /* Rounds the corners of the gradient */
+}
+
+/* Ensures the image stays behind the gradient */
+.filtered {
+  z-index: 0; /* Keeps the image under the gradient */
+}
+
+/* Tarantula Nebula image effect */
+.tarantula {
+  border: none; /* Removes any default border */
+  box-shadow: 
+    0 0 0 5px #FF8C01,    /* Adds a green border */
+    0 0 0 10px #0000FE,   /* Adds a red border around the image */
+    0 0 0 15px #FE0000,   /* Adds a blue border on top of the red */
+    0 0 0 20px #008001;   /* Adds an orange border on top */
+  position: relative; /* Ensures the box-shadow is positioned correctly */
+}
+
+/* Styles for the text below the images */
+.info {
+  font-size: 14px; /* Makes the text smaller */
+  color: #777; /* Light gray color for the text */
+  width: 100%; /* Makes sure the text takes up full width */
+  margin-top: 10px; /* Adds space above the text */
+  line-height: 1.4; /* Increases the line spacing for readability */
+}
+
+/* Styling for links in the info section */
+.info a {
+  color: #007bff; /* Makes links blue */
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* Hover effect for links in the info section */
+.info a:hover {
+  text-decoration: underline; /* Underlines links when hovered */
+}

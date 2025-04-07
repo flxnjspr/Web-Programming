@@ -1,0 +1,52 @@
+/* This removes the default space around the page and sets some basic styles */
+html, body {
+  margin: 0; /* gets rid of the space around the edges */
+  padding: 0; /* removes space inside the page */
+  height: 100%; /* makes the page take up the whole screen */
+  font-family: Arial, sans-serif; /* sets the font for the text */
+  background-color: #f9f9f9; /* light grey background */
+}
+
+/* This is the big black box that holds the video in the middle of the screen */
+.video-container {
+  display: flex; /* lets us use flexbox for alignment */
+  justify-content: center; /* puts the video in the center horizontally */
+  align-items: center; /* centers it up and down */
+  height: 80vh; /* takes up 80% of the screen height */
+  background-color: #000; /* black background like YouTube */
+}
+
+/* This is the actual video player itself */
+video {
+  width: 80%; /* the video takes up 80% of the screen width */
+  max-width: 960px; /* makes sure it doesn't get too huge on big screens */
+  border-radius: 10px; /* rounds the corners a bit */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* gives it a nice soft shadow */
+}
+
+/* This is the section under the video that has the title and text */
+.video-info {
+  text-align: center; /* centers the text */
+  padding: 20px; /* adds some space inside the box */
+  background-color: #fff; /* white background to make it stand out */
+  margin-top: 20px; /* adds space above this section */
+  max-width: 960px; /* same max width as the video */
+  margin-left: auto; /* center the box horizontally */
+  margin-right: auto; /* center the box horizontally */
+  border-radius: 10px; /* rounded corners like the video */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
+}
+
+/* This styles the big title under the video */
+.video-info h1 {
+  font-size: 24px; /* makes the title bigger */
+  color: #333; /* dark gray color */
+  margin-bottom: 10px; /* space between title and paragraph */
+}
+
+/* This styles the paragraph text under the title */
+.video-info p {
+  font-size: 16px; /* makes it a bit smaller than the title */
+  color: #555; /* lighter gray for easier reading */
+  line-height: 1.5; /* adds space between lines so it's easier to read */
+}

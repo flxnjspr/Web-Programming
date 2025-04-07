@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Embedded Video</title>
+  <!-- Link to the external CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Container that holds the video element -->
+  <div class="video-container">
+    <!-- 
+      Video element:
+      - src: path to the video file
+      - poster: image shown before the video starts
+      - loop: video restarts automatically after ending
+      - muted: video starts with no sound
+      - controls: shows playback controls like play/pause
+    -->
+    <video 
+      src="videos/stop_studyin_programming.mp4"
+      poster="images/thumbnail.png"
+      loop
+      muted
+      controls>
+      <!-- Message shown if the browser doesn't support the video -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Section with information about the video -->
+  <div class="video-info">
+    <h1> Developer Roadmap Iceberg! </h1>
+    <p>Watch this video to unlock your coding potential and master programming like a pro!</p>
+  </div>
+
+</body>
+</html>

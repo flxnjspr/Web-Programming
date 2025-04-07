@@ -1,0 +1,72 @@
+/* Basic styles for the body of the page */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the page */
+    background-color: #f4f4f4; /* Light grey background */
+    text-align: center; /* Centers the text and content */
+    padding: 2rem; /* Adds padding around the content */
+}
+
+/* Styles for displaying the RGB color text */
+.rgb-display {
+    font-size: 1.5rem; /* Makes the font size bigger */
+    margin: 1rem 0; /* Adds margin on top and bottom */
+}
+
+/* Container for the color options */
+.choices {
+    display: flex; /* Uses Flexbox to display items in a row */
+    justify-content: center; /* Centers the color boxes horizontally */
+    gap: 1rem; /* Adds space between each color option */
+    margin: 1rem 0; /* Adds margin on top and bottom */
+}
+
+/* Styles for each individual color box */
+.color-option {
+    width: 100px; /* Makes each color box 100px wide */
+    height: 100px; /* Makes each color box 100px tall */
+    border-radius: 10px; /* Rounds the corners of the box */
+    cursor: pointer; /* Changes the cursor to a pointer when hovered */
+    border: 2px solid #333; /* Adds a border around the color box */
+    transition: transform 0.2s; /* Smooth animation when hovered */
+}
+
+/* Adds hover effect to the color options */
+.color-option:hover {
+    transform: scale(1.1); /* Makes the color box slightly bigger when hovered */
+}
+
+/* Styles for the status (lives and score) section */
+.status {
+    margin-top: 1rem; /* Adds margin on top */
+    font-size: 1.2rem; /* Makes the text size a little bigger */
+}
+
+/* Styles for the game over section */
+#gameOver {
+    margin-top: 2rem; /* Adds more margin on top to separate it from other elements */
+}
+
+/* Class for hiding elements (game over screen, etc.) */
+.hidden {
+    display: none; /* Hides the element from the page */
+}
+
+/* Character styling */
+.character {
+    font-size: 4rem; /* Makes the character really big */
+    transition: transform 0.5s; /* Adds smooth transition effect for animations */
+}
+
+/* When the character is "dead," apply these styles */
+.character.dead {
+    transform: rotate(90deg); /* Rotates the character to simulate death */
+    opacity: 0.3; /* Makes the character more transparent */
+}
+
+/* Announcement styles (for game messages like warnings or notifications) */
+.announcement {
+    margin-top: 20px; /* Adds space on top */
+    font-size: 1.5rem; /* Makes the text size bigger */
+    font-weight: bold; /* Makes the text bold */
+    color: red; /* Makes the text red for a strong warning */
+}

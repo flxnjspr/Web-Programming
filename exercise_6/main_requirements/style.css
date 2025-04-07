@@ -1,0 +1,209 @@
+/* This rule resets the margin and padding of all elements to 0 and sets box-sizing to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* This applies to the body of the page */
+  body {
+    /* Sets the font family */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Light background color */
+    background-color: #f2f4f8;
+    
+    /* Centers the content vertically and horizontally using Flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Makes the body take the full height of the viewport */
+    height: 100vh;
+  }
+  
+  /* This is the container for the calculator */
+  .calculator {
+    /* Positions the calculator relative to its container */
+    position: relative;
+    
+    /* Makes the calculator responsive with a max-width of 600px */
+    width: 100%;
+    max-width: 600px;
+    
+    /* Adds padding around the content */
+    padding: 3rem 2rem;
+    
+    /* Rounds the corners of the calculator */
+    border-radius: 20px;
+    
+    /* Adds a shadow effect for better visibility */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    
+    /* Ensures the content doesn't overflow outside the border */
+    overflow: hidden;
+  }
+  
+  /* This positions the background image */
+  .bg-image {
+    /* Positions the background image in the top-left corner */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    /* Makes the background image cover the entire calculator */
+    width: 100%;
+    height: 100%;
+    
+    /* Ensures the image scales correctly without distortion */
+    object-fit: cover;
+    
+    /* Ensures the background image is behind other content */
+    z-index: 0;
+  }
+  
+  /* This is the content area of the calculator */
+  .content {
+    /* Positions the content area relative to its container */
+    position: relative;
+    
+    /* Ensures the content appears above the background image */
+    z-index: 1;
+    
+    /* Adds a semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.9);
+    
+    /* Adds padding around the content */
+    padding: 2rem;
+    
+    /* Rounds the corners of the content */
+    border-radius: 15px;
+  }
+  
+  /* This targets the heading (h2) inside the content */
+  h2 {
+    /* Centers the heading text */
+    text-align: center;
+    
+    /* Adds space below the heading */
+    margin-bottom: 2rem;
+    
+    /* Sets the color of the heading text */
+    color: #222;
+  }
+  
+  /* This targets the labels inside the calculator */
+  label {
+    /* Displays the label as a block element */
+    display: block;
+    
+    /* Adds space below the label */
+    margin-bottom: 0.5rem;
+    
+    /* Sets the color of the label text */
+    color: #333;
+    
+    /* Makes the label text slightly bold */
+    font-weight: 500;
+  }
+  
+  /* This targets the number input fields */
+  input[type="number"] {
+    /* Makes the input take up the full width of its container */
+    width: 100%;
+    
+    /* Adds padding inside the input field */
+    padding: 0.85rem;
+    
+    /* Adds space below the input field */
+    margin-bottom: 1.5rem;
+    
+    /* Adds a border around the input field */
+    border: 2px solid #ccc;
+    
+    /* Rounds the corners of the input field */
+    border-radius: 10px;
+    
+    /* Sets the font size inside the input field */
+    font-size: 1.1rem;
+    
+    /* Adds a smooth transition for the border color when focused */
+    transition: border-color 0.3s;
+  }
+  
+  /* This changes the border color when the input is focused */
+  input[type="number"]:focus {
+    /* Changes the border color to blue when focused */
+    border-color: #0077cc;
+    
+    /* Removes the default outline when focused */
+    outline: none;
+  }
+  
+  /* This styles the button */
+  button {
+    /* Makes the button take up the full width of its container */
+    width: 100%;
+    
+    /* Adds padding inside the button */
+    padding: 1rem;
+    
+    /* Sets the background color of the button */
+    background-color: #0077cc;
+    
+    /* Sets the text color of the button */
+    color: white;
+    
+    /* Sets the font size inside the button */
+    font-size: 1.1rem;
+    
+    /* Removes the default border */
+    border: none;
+    
+    /* Rounds the corners of the button */
+    border-radius: 10px;
+    
+    /* Changes the cursor to a pointer when hovering over the button */
+    cursor: pointer;
+    
+    /* Adds a smooth transition for the background color */
+    transition: background-color 0.3s;
+  }
+  
+  /* This changes the background color when hovering over the button */
+  button:hover {
+    /* Darkens the background color when hovered */
+    background-color: #005fa3;
+  }
+  
+  /* This targets the total cost display */
+  #totalCost {
+    /* Adds space at the top of the element */
+    margin-top: 2rem;
+    
+    /* Sets the font size for the total cost */
+    font-size: 1.4rem;
+    
+    /* Centers the text inside the element */
+    text-align: center;
+    
+    /* Sets the text color */
+    color: #000;
+    
+    /* Makes the text bold */
+    font-weight: bold;
+  }
+  
+  /* This section applies to smaller screens (max-width: 600px) */
+  @media (max-width: 600px) {
+    /* Adjusts the padding of the calculator for smaller screens */
+    .calculator {
+      padding: 2rem 1.5rem;
+    }
+  
+    /* Adjusts the padding of the content area for smaller screens */
+    .content {
+      padding: 1.5rem;
+    }
+  }
+  

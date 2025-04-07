@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This meta tag sets the character encoding for the document to UTF-8, which supports many characters from different languages -->
+    <meta charset="UTF-8">
+    <!-- This meta tag makes sure the page is responsive on different screen sizes, adjusting based on the device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page that will appear in the browser tab -->
+    <title>Study Planner</title>
+    <!-- Linking the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header section of the webpage, usually contains the main title -->
+    <header>
+        <div class="container">
+            <!-- This is the main title of the page, which describes the purpose of the page -->
+            <h1>Study Planner</h1>
+        </div>
+    </header>
+
+    <!-- Navigation bar for the user to navigate through different sections of the page -->
+    <nav>
+        <ul>
+            <!-- Links to different sections of the page -->
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content of the webpage -->
+    <main>
+        <!-- The Overview section, explaining what this study planner is about -->
+        <section id="overview" class="content-section">
+            <h2>Overview</h2>
+            <p>This study planner will help you organize your learning and stay on track with your coursework. It includes a schedule and important resources to aid your studies.</p>
+        </section>
+
+        <!-- The Study Schedule section, listing the study hours for each day -->
+        <section id="schedule" class="content-section">
+            <h2>Study Schedule</h2>
+            <ul>
+                <!-- Each list item represents a day and the scheduled study session for that day -->
+                <li>Monday: 6pm - 9pm - Introduction to Programming</li>
+                <li>Tuesday: 6pm - 9pm - Creative Coding</li>
+                <li>Wednesday: 6pm - 9pm - Web Programming</li>
+                <li>Thursday: 6pm - 9pm - Digital Visual Design</li>
+                <li>Friday: 6pm - 9pm - Ideation & UX Design</li>
+            </ul>
+        </section>
+
+        <!-- The Resources section, providing helpful links to study resources -->
+        <section id="resources" class="content-section">
+            <h2>Resources</h2>
+            <ul>
+                <!-- Links to external websites that offer helpful resources -->
+                <li><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a></li>
+                <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.mati.ac.ae" target="_blank">MetaverseAge Training Institute</a></li>
+            </ul>
+        </section>
+
+        <!-- The Contact section, allowing users to get in touch -->
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <!-- A message offering contact info -->
+            <p>If you have any questions or need further assistance, feel free to reach out.</p>
+            <!-- A button that triggers an alert when clicked, giving a contact email -->
+            <button onclick="alert('Contact us at studyplanner@example.com')">Contact Us</button>
+        </section>
+    </main>
+
+    <!-- Footer section at the bottom of the page -->
+    <footer>
+        <!-- Copyright information displayed in the footer -->
+        <p>&copy; 2025 Study Planner. All rights reserved.</p>
+    </footer>
+</body>
+</html>

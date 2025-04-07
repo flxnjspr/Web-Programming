@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- This meta tag defines the character encoding for the page (UTF-8) -->
+  <meta charset="UTF-8" />
+
+  <!-- This meta tag ensures the page is responsive and adjusts for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- The title of the page that appears in the browser tab -->
+  <title>Petrol Calculator</title>
+
+  <!-- Link to the external CSS file for styling the page -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main container for the calculator -->
+  <div class="calculator">
+    
+    <!-- Background image for the calculator (e.g., gas station logo) -->
+    <img src="images/gas_station_logo.png" alt="Gas Station Logo" class="bg-image" />
+
+    <!-- Content area for the calculator's elements -->
+    <div class="content">
+      
+      <!-- Heading for the calculator -->
+      <h2>Petrol Cost Calculator</h2>
+
+      <!-- Label and input for the cost per liter -->
+      <label for="costPerLiter">Cost per liter (£):</label>
+      <!-- Input field where the user can enter the cost per liter (default: 1.72) -->
+      <input type="number" id="costPerLiter" value="1.72" step="0.01" min="0" />
+
+      <!-- Label and input for the number of liters purchased -->
+      <label for="liters">Liters purchased:</label>
+      <!-- Input field where the user can enter the number of liters purchased (default: 0) -->
+      <input type="number" id="liters" value="0" step="0.1" min="0" />
+
+      <!-- Button to calculate the total cost based on the inputs -->
+      <button onclick="calculateTotal()">Calculate Total</button>
+
+      <!-- Paragraph element to display the total cost -->
+      <p id="totalCost">Total Cost: £0.00</p>
+    </div>
+  </div>
+
+  <!-- Link to the external JavaScript file for the calculator functionality -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- This meta tag defines the character encoding for the page (UTF-8) -->
+  <meta charset="UTF-8" />
+
+  <!-- This meta tag makes the page responsive on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- The title of the page that appears on the browser tab -->
+  <title>RGB Color Guessing Game</title>
+
+  <!-- Link to the external CSS file for styling the page -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main container for the game -->
+  <div class="game">
+    
+    <!-- Character that represents the player -->
+    <div id="character" class="character">🕴️</div>
+
+    <!-- Title of the game -->
+    <h1>Guess the Color!</h1>
+
+    <!-- Display for the RGB color the user needs to guess -->
+    <div id="rgbDisplay" class="rgb-display">rgb(??, ??, ??)</div>
+
+    <!-- Container where the color options will be shown -->
+    <div id="choices" class="choices"></div>
+
+    <!-- Status section showing the user's lives and score -->
+    <div class="status">
+      <p>Lives: <span id="lives">3</span></p> <!-- Shows the remaining lives -->
+      <p>Score: <span id="score">0</span></p> <!-- Shows the current score -->
+    </div>
+
+    <!-- Section for announcements or messages (hidden by default) -->
+    <div id="announcement" class="announcement hidden"></div>
+
+    <!-- Game over section (hidden until the game ends) -->
+    <div id="gameOver" class="hidden">
+      <h2>Game Over!</h2>
+      <!-- Displays the final score at the end of the game -->
+      <p>Your final score is: <span id="finalScore">0</span></p>
+      <!-- Button to restart the game -->
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Link to the external JavaScript file for game functionality -->
+  <script src="index.js"></script>
+</body>
+</html>
