@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0; /* Removes default margin for all elements */
+    padding: 0; /* Removes default padding for all elements */
+    box-sizing: border-box; /* Makes sure padding and border are included in width/height */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Sets the font for the whole page */
+    line-height: 1.6; /* Increases the line height for better readability */
+    background-color: #f4f4f4; /* Light grey background color */
+    color: #333; /* Dark grey text color */
+    padding: 20px; /* Adds space around the content */
+    font-size: 1rem; /* Sets the font size */
+    max-width: 1200px; /* Limits the width of the content */
+    margin: 0 auto; /* Centers the body content */
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50; /* Green background for the header */
+    color: white; /* White text color */
+    padding: 30px; /* Adds space inside the header */
+    text-align: center; /* Centers the text */
+    border-radius: 10px; /* Rounds the corners of the header */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the header */
+    margin-bottom: 30px; /* Adds space below the header */
+}
+
+h1 {
+    font-size: 3rem; /* Makes the main heading larger */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+header p {
+    font-size: 1.2rem; /* Makes the paragraph text a bit larger */
+}
+
+/* Section Styling */
+section {
+    margin-top: 30px; /* Adds space above each section */
+}
+
+h2 {
+    font-size: 2.5rem; /* Makes the section heading larger */
+    color: #4CAF50; /* Green color for section headings */
+    margin-bottom: 20px; /* Adds space below the section heading */
+    text-transform: uppercase; /* Makes the section heading uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+}
+
+h3 {
+    font-size: 1.75rem; /* Makes subheadings smaller than section headings */
+    margin-top: 15px; /* Adds space above the subheading */
+    color: #333; /* Dark grey text color for subheadings */
+    border-bottom: 2px solid #4CAF50; /* Adds a green border below subheadings */
+    padding-bottom: 5px; /* Adds space below the subheading */
+    margin-bottom: 10px; /* Adds space below the subheading */
+}
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 15px; /* Adds space below each paragraph */
+    font-size: 1rem; /* Sets the font size */
+    line-height: 1.7; /* Increases line height for readability */
+    color: #555; /* Medium grey text color */
+}
+
+ul {
+    margin-left: 20px; /* Indents the unordered list */
+    list-style-type: square; /* Makes the list items appear with square bullets */
+    margin-bottom: 20px; /* Adds space below the list */
+}
+
+li {
+    font-size: 1rem; /* Sets the font size for list items */
+    margin-bottom: 8px; /* Adds space below each list item */
+    color: #666; /* Lighter grey color for list items */
+}
+
+/* Code Styling */
+code {
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+    background-color: #f0f0f0; /* Light grey background for code */
+    padding: 5px 10px; /* Adds space around the code */
+    border-radius: 5px; /* Rounds the corners of the code block */
+    font-size: 1rem; /* Sets the font size */
+    color: #d32f2f; /* Red color for the code */
+}
+
+/* Preformatted Text Styling */
+pre {
+    background-color: #f9f9f9; /* Light grey background for preformatted text */
+    padding: 20px; /* Adds space around the preformatted text */
+    border-radius: 10px; /* Rounds the corners of the preformatted text block */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for preformatted text */
+    overflow-x: auto; /* Makes the text scrollable horizontally if too long */
+    white-space: pre-wrap; /* Ensures line breaks and spaces are preserved */
+    color: #333; /* Dark grey text color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Adds a subtle shadow */
+    margin-bottom: 30px; /* Adds space below the preformatted text */
+    font-size: 1rem; /* Sets the font size */
+}
+
+/* Link Styling */
+a {
+    color: #4CAF50; /* Green color for links */
+    font-weight: 600; /* Makes the link text bold */
+    text-decoration: none; /* Removes underline from links */
+}
+
+a:hover {
+    color: #388e3c; /* Changes the link color on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f9f9f9; /* Light grey background for footer */
+    text-align: center; /* Centers the text in the footer */
+    color: #888; /* Grey text color for footer */
+    padding: 20px; /* Adds space inside the footer */
+    margin-top: 30px; /* Adds space above the footer */
+    font-size: 0.9rem; /* Smaller text size for the footer */
+    border-top: 2px solid #ddd; /* Adds a border at the top of the footer */
+}

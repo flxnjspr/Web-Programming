@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- This sets the character encoding for the page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on mobile devices -->
+    <title>HTML & CSS Quick Reference Guide</title> <!-- The title that appears in the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Links the external CSS file for styling -->
+</head>
+<body>
+
+    <header>
+        <h1>HTML & CSS Quick Reference Guide</h1> <!-- Main heading of the page -->
+        <p>A beginner's guide to basic HTML and CSS tags and properties with examples.</p> <!-- Short description of the guide -->
+    </header>
+
+    <section>
+        <h2>HTML Tags</h2> <!-- Heading for the HTML section -->
+
+        <h3>&lt;h1&gt; - Heading 1</h3> <!-- Heading example -->
+        <p>The <code>&lt;h1&gt;</code> tag is used to define the main heading. It's the most important heading on the page.</p>
+        <pre><code>&lt;h1&gt;This is a Heading 1&lt;/h1&gt;</code></pre> <!-- Example of using <h1> tag -->
+
+        <h3>&lt;p&gt; - Paragraph</h3> <!-- Paragraph tag example -->
+        <p>The <code>&lt;p&gt;</code> tag is used for writing paragraphs of text.</p>
+        <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre> <!-- Example of using <p> tag -->
+
+        <h3>&lt;ul&gt; and &lt;li&gt; - Unordered List</h3> <!-- Unordered list tag example -->
+        <p>The <code>&lt;ul&gt;</code> tag creates an unordered list, and the <code>&lt;li&gt;</code> tag is used for each list item.</p>
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre> <!-- Example of an unordered list -->
+
+        <h3>&lt;a&gt; - Anchor (Link)</h3> <!-- Link tag example -->
+        <p>The <code>&lt;a&gt;</code> tag is used to create links. You add a <code>href</code> attribute to tell the browser where to go when the link is clicked.</p>
+        <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre> <!-- Example of a link -->
+
+        <h3>&lt;img&gt; - Image</h3> <!-- Image tag example -->
+        <p>The <code>&lt;img&gt;</code> tag is used to display an image on the page. The <code>src</code> attribute specifies the image file.</p>
+        <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre> <!-- Example of an image tag -->
+
+        <h3>&lt;div&gt; - Division</h3> <!-- Division tag example -->
+        <p>The <code>&lt;div&gt;</code> tag is used to group content together for styling or layout purposes.</p>
+        <pre><code>&lt;div class="container"&gt;Content goes here&lt;/div&gt;</code></pre> <!-- Example of a div tag -->
+
+        <h3>&lt;span&gt; - Span</h3> <!-- Span tag example -->
+        <p>The <code>&lt;span&gt;</code> tag is used to style a part of text or inline elements within a block.</p>
+        <pre><code>&lt;span style="color: red"&gt;This is red text&lt;/span&gt;</code></pre> <!-- Example of using <span> tag -->
+
+        <h3>&lt;code&gt; - Code</h3> <!-- Inline code tag example -->
+        <p>The <code>&lt;code&gt;</code> tag is used to display code inline.</p>
+        <pre><code>&lt;code&gt;console.log('Hello, world!')&lt;/code&gt;</code></pre> <!-- Example of using <code> tag -->
+
+        <h3>&lt;pre&gt; - Preformatted Text</h3> <!-- Preformatted text tag example -->
+        <p>The <code>&lt;pre&gt;</code> tag is used for preformatted text, where spaces and line breaks are preserved.</p>
+        <pre><code>&lt;pre&gt;
+This is some preformatted text
+that preserves spacing and
+line breaks.
+&lt;/pre&gt;</code></pre> <!-- Example of using <pre> tag -->
+    </section>
+
+    <section>
+        <h2>CSS Properties</h2> <!-- Heading for the CSS section -->
+
+        <h3>color</h3> <!-- Color property example -->
+        <p>The <code>color</code> property sets the color of the text.</p>
+        <pre><code>p {
+    color: #333;
+}</code></pre> <!-- Example of using the color property -->
+
+        <h3>background-color</h3> <!-- Background-color property example -->
+        <p>The <code>background-color</code> property sets the background color of an element.</p>
+        <pre><code>div {
+    background-color: #f0f0f0;
+}</code></pre> <!-- Example of using background-color property -->
+
+        <h3>font-size</h3> <!-- Font-size property example -->
+        <p>The <code>font-size</code> property changes the size of the text.</p>
+        <pre><code>h1 {
+    font-size: 2rem;
+}</code></pre> <!-- Example of using font-size property -->
+
+        <h3>padding</h3> <!-- Padding property example -->
+        <p>The <code>padding</code> property adds space inside an element, between the content and the border.</p>
+        <pre><code>div {
+    padding: 20px;
+}</code></pre> <!-- Example of using padding property -->
+
+        <h3>margin</h3> <!-- Margin property example -->
+        <p>The <code>margin</code> property adds space outside an element, around the content.</p>
+        <pre><code>p {
+    margin: 10px;
+}</code></pre> <!-- Example of using margin property -->
+
+        <h3>border</h3> <!-- Border property example -->
+        <p>The <code>border</code> property adds a border around an element.</p>
+        <pre><code>div {
+    border: 1px solid #333;
+}</code></pre> <!-- Example of using border property -->
+
+        <h3>font-family</h3> <!-- Font-family property example -->
+        <p>The <code>font-family</code> property sets the typeface for the text.</p>
+        <pre><code>body {
+    font-family: 'Arial', sans-serif;
+}</code></pre> <!-- Example of using font-family property -->
+
+        <h3>text-align</h3> <!-- Text-align property example -->
+        <p>The <code>text-align</code> property aligns the text within an element.</p>
+        <pre><code>h1 {
+    text-align: center;
+}</code></pre> <!-- Example of using text-align property -->
+
+    </section>
+
+</body>
+</html>

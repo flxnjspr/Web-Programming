@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blueberry Cheesecake Recipe</title>
+  <!-- This is the icon that shows in the tab of the browser. -->
+  <link rel="icon" type="image/png" href="images/felix-recipe-favicon.png" />
+  <!-- Google fonts for nice font style -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Link to the external CSS file where the styles are written -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header section where logo and menu are placed -->
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <img src="images/felix-recipe.png" alt="Felix Recipe" class="logo">
+      </a>
+      <nav>
+        <!-- These are the menu items that take you to different recipe pages -->
+        <a href="allRecipes.html">All Recipes</a>
+        <a href="bread.html">Bread</a>
+        <a href="breakfast.html">Breakfast</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="desserts.html">Desserts</a>
+        <a href="pies.html">Pies</a>
+        <!-- Search button -->
+        <button class="search-btn">Search</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main part where the content of the page goes -->
+  <main>
+    <!-- The title and image of the recipe -->
+    <section class="recipe-header fade-in">
+      <h1 id="recipe-title">Blueberry Cheesecake Recipe</h1>
+      <img src="images/blueberry-cheesecake.jpg" alt="Blueberry Cheesecake" class="recipe-img">
+      <div class="meta-info">
+        <p><strong>Author:</strong> Felix Saupan</p>
+        <p><strong>Published:</strong> 2/21/2025</p>
+      </div>
+    </section>
+
+    <!-- Links to jump to different parts of the recipe -->
+    <section class="recipe-links fade-in">
+      <p>
+        <button class="jump-btn"><a href="#recipe">Jump To Recipe</a></button> 
+        | 
+        <button class="jump-btn"><a href="#ingredients">Check Ingredients</a></button> 
+        | 
+        <button class="jump-btn"><a href="#method">Jump To Method</a></button>
+      </p>
+    </section>
+
+    <!-- History section that tells the story of blueberry cheesecake -->
+    <div class="history-box">
+      <h4>The History and Popularity of Blueberry Cheesecake</h4>
+      <p>
+          Blueberry cheesecake is a beloved dessert worldwide. It combines rich cheesecake with blueberries...
+      </p>
+      <img src="images/blueberryCheesecake1.jpg">
+      <h3>Origins of Cheesecake</h3>
+      <p>The origins of cheesecake can be traced back to Ancient Greece...</p>
+      <img src="images/blueberryCheesecake2.jpg">
+      <p>By the time cheesecake reached America...</p>
+      <img src="images/blueberryCheesecake3.jpg">
+      <h3>The Role of Blueberries in Cheesecake</h3>
+      <p>Blueberries, native to North America...</p>
+      <img src="images/blueberryCheesecake4.jpg">
+    </div>
+
+    <!-- Ingredients and method for the recipe -->
+    <section class="recipe fade-in" id="recipe">
+      <h2>Recipe</h2>
+      <h3 id="ingredients">Ingredients</h3>
+      <ul>
+        <!-- List of ingredients to make the cheesecake -->
+        <li>1 cup graham cracker crumb</li>
+        <li>¼ cup melted butter</li>
+        <li>2 tablespoons white sugar</li>
+        <li>2 (8 ounce) packages cream cheese, softened</li>
+        <li>1 cup sour cream</li>
+        <li>¾ cup white sugar</li>
+        <li>2 tablespoons all-purpose flour</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>4 large eggs</li>
+        <li>2 cups frozen blueberries, dry pack</li>
+        <li>⅓ cup blueberry jelly</li>
+      </ul>
+
+      <h3 id="method">Method</h3>
+      <div class="method-steps">
+        <h4>Step 1</h4>
+        <p>Preheat the oven to 325°F (165°C).</p>
+        <h4>Step 2</h4>
+        <p>Mix graham crumbs, melted butter, and 2 tablespoons sugar...</p>
+      </div>
+    </section>
+
+    <!-- Nutrition facts for the recipe -->
+    <section class="nutrition fade-in">
+      <h2>Nutrition Facts</h2>
+      <p>Servings Per Recipe: 12</p>
+      <p>Calories: 356</p>
+      <table>
+        <tr><th>Nutrition</th><th>Amount per Serving</th></tr>
+        <tr><td>Total Fat</td><td>23g</td></tr>
+        <tr><td>Saturated Fat</td><td>14g</td></tr>
+        <tr><td>Cholesterol</td><td>122mg</td></tr>
+      </table>
+    </section>
+
+    <!-- Video section with a tutorial -->
+    <section class="video fade-in">
+      <h2>Video Of The Recipe</h2>
+      <video src="videos/blueberryVideo.mp4" controls autoplay muted></video>
+    </section>
+
+    <!-- Footer with copyright info -->
+    <footer>
+      <p>Author: Felix Ian Jasper Saupan | &copy; Felix Recipe. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <!-- External JavaScript file that has the functionality -->
+  <script src="script.js"></script>
+</body>
+</html>

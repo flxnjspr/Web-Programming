@@ -1,0 +1,379 @@
+/* Import Google Font 'Playfair Display' for stylish text */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap'); 
+
+/* Enable smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Universal reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic body styling, background color, and font settings */
+body {
+  font-family: 'Playfair Display', serif; /* Apply Playfair font */
+  background-color: #FFF4E6;  /* Light peachy background */
+  color: #2c2c2c;  /* Dark text color */
+  line-height: 1.6;  /* Set line height for readability */
+  font-size: 1.1rem;  /* Set font size for easy reading */
+  padding-bottom: 50px; /* Add space at the bottom */
+}
+
+/* Links should not have underlines, and inherit text color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container class for limiting content width and centering */
+.container {
+  max-width: 1200px; /* Max width for container */
+  margin: 0 auto; /* Center content */
+  padding: 1.5rem; /* Add padding around content */
+}
+
+/* Header background, border, and shadow styling */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); /* Light shadow for header */
+}
+
+/* Flexbox container for header content like logo and nav */
+header .container {
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Space out logo and navigation */
+  align-items: center; /* Align items vertically */
+  flex-wrap: wrap; /* Allow items to wrap if needed */
+}
+
+/* Logo image styling (set max height) */
+.logo {
+  max-height: 60px; /* Restrict logo height */
+}
+
+/* Navigation styling with flexbox */
+nav {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items if there's not enough space */
+  gap: 1rem; /* Space between nav items */
+  align-items: center; /* Vertically center nav items */
+}
+
+/* Style for navigation links */
+nav a {
+  color: #333; /* Set default link color */
+  font-weight: 500; /* Make text slightly bold */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+  color: #F29057;  /* Change color when hovering */
+}
+
+/* Search button styling */
+.search-btn {
+  background: #F29057;  /* Primary color */
+  color: #fff;  /* White text color */
+  border: none; /* Remove border */
+  padding: 0.5rem 1.25rem; /* Button padding */
+  font-size: 1rem;  /* Set font size */
+  border-radius: 30px; /* Round button corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Hover effect for search button */
+.search-btn:hover {
+  background: #e67e3d;  /* Darken button color when hovered */
+}
+
+/* Recipe header section styling */
+.recipe-header {
+  text-align: center; /* Center text */
+  padding: 3rem 1rem 2rem; /* Add padding */
+}
+
+/* Recipe title (h1) styling */
+.recipe-header h1 {
+  font-size: 2.75rem; /* Large font size for the title */
+  margin-bottom: 1rem; /* Space below the title */
+  font-weight: 700; /* Make the title bold */
+}
+
+/* Recipe image styling */
+.recipe-img {
+  width: 100%;  /* Make image full-width */
+  max-width: 700px;  /* Limit max width */
+  border-radius: 20px; /* Round the corners */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* Add subtle shadow */
+  margin: 2rem auto; /* Center image with margin */
+  display: block; /* Make image a block element */
+}
+
+/* Meta information (author, date) styling */
+.meta-info {
+  font-size: 0.95rem; /* Slightly smaller font */
+  color: #666; /* Light gray color */
+}
+
+/* Recipe links (Jump to sections) styling */
+.recipe-links {
+  text-align: center; /* Center the buttons */
+  margin-bottom: 2rem; /* Space below buttons */
+}
+
+/* Style for jump buttons */
+.jump-btn a {
+  text-decoration: none;
+  color: #fff; /* White text */
+}
+
+/* Button styling for jump links */
+.jump-btn {
+  background: linear-gradient(to right, #F29057, #eeb0ff); /* Gradient background */
+  color: #fff; /* White text */
+  padding: 0.6rem 1.5rem; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 25px; /* Round button corners */
+  margin: 0 0.5rem; /* Space between buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Hover effect for jump buttons */
+.jump-btn:hover {
+  background: linear-gradient(to right, #d87e4f, #c97bdd); /* Darker gradient on hover */
+}
+
+/* Recipe description box styling */
+.recipe-description {
+  background-color: #F2D6D0;  /* Soft peachy background */
+  padding: 40px;  /* Add padding */
+  margin: 30px 0;  /* Space above and below */
+  border-radius: 10px; /* Round corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+  font-family: 'Georgia', serif; /* Set font family */
+  color: #333; /* Dark text color */
+}
+
+/* Headings inside recipe description */
+.recipe-description h3,
+.recipe-description h4 {
+  font-family: 'Georgia', serif; /* Use Georgia font */
+  color: #F29057;  /* Accent color */
+  text-align: center; /* Center-align headings */
+  font-weight: 600; /* Bold headings */
+  margin-bottom: 10px; /* Space below the headings */
+}
+
+/* Paragraph styling inside recipe description */
+.recipe-description p {
+  line-height: 1.6; /* Line spacing */
+  font-size: 1.1rem; /* Slightly larger text */
+  margin-bottom: 20px; /* Space below paragraphs */
+  text-align: justify; /* Justify text for readability */
+  color: #555; /* Light gray text color */
+}
+
+/* Link styling inside recipe description */
+.recipe-description a {
+  text-decoration: none;
+  color: #F29057;  /* Accent color */
+  font-weight: bold; /* Bold links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for links */
+.recipe-description a:hover {
+  color: #f2a900; /* Change color when hovering */
+}
+
+/* Styling for the history box inside recipe description */
+.recipe-description .history {
+  background-color: #F7E6D7;  /* Light peach background */
+  padding: 20px;  /* Add padding */
+  border-radius: 8px; /* Round corners */
+  margin-top: 30px; /* Space above */
+}
+
+/* Margin below history box text */
+.recipe-description .history p {
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Highlight specific text in recipe description */
+.recipe-description .highlight {
+  font-weight: bold; /* Make text bold */
+  color: #1e3d58; /* Dark blue color */
+  background-color: #F7E6D7;  /* Soft beige background */
+  padding: 0 5px; /* Add padding */
+  border-radius: 4px; /* Round corners */
+}
+
+/* Important text inside recipe description */
+.recipe-description .important {
+  color: #d87031; /* Orange color */
+  font-weight: 600; /* Bold text */
+}
+
+/* Styling for origin and role sections inside recipe description */
+.recipe-description .origin,
+.recipe-description .role {
+  background-color: #E7D2B9;  /* Light peach beige background */
+  padding: 20px;  /* Add padding */
+  margin-bottom: 20px; /* Space below */
+  border-radius: 8px; /* Round corners */
+}
+
+/* Recipe section styling */
+.recipe {
+  background-color: #FFF4E6;  /* Light peach background */
+  padding: 2rem;  /* Add padding */
+  margin: 2rem auto; /* Center the section */
+  max-width: 900px; /* Limit width */
+  border-radius: 20px; /* Round corners */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05); /* Light shadow */
+}
+
+/* Recipe section headings color */
+.recipe h2, .recipe h3 {
+  margin-bottom: 1rem; /* Space below */
+  color: #F29057;  /* Accent color */
+}
+
+/* Style for recipe list */
+.recipe ul {
+  list-style: disc; /* Use bullet points */
+  padding-left: 2rem; /* Indent list */
+  margin-bottom: 2rem; /* Space below list */
+}
+
+/* Styling for method steps */
+.method-steps h4 {
+  margin-top: 1rem; /* Space above */
+  color: #F29057;  /* Accent color */
+}
+
+/* Nutrition section styling */
+.nutrition {
+  max-width: 800px; /* Limit width */
+  margin: 3rem auto; /* Center the section */
+  padding: 2rem; /* Add padding */
+  background-color: #fff; /* White background */
+  border: 1px solid #eee; /* Light border */
+  border-radius: 16px; /* Round corners */
+}
+
+/* Nutrition section heading color */
+.nutrition h2 {
+  color: #F29057;  /* Accent color */
+  margin-bottom: 1rem; /* Space below */
+}
+
+/* Styling for nutrition table */
+.nutrition table {
+  width: 100%; /* Make table full width */
+  border-collapse: collapse; /* Collapse borders */
+  margin-top: 1rem; /* Space above table */
+}
+
+/* Table cell styling */
+.nutrition th, .nutrition td {
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 0.75rem 1rem; /* Padding for cells */
+  text-align: left; /* Left-align text */
+}
+
+/* Video section styling */
+.video {
+  text-align: center; /* Center the video */
+  margin: 3rem auto; /* Center the section */
+  padding: 2rem; /* Add padding */
+}
+
+/* Video section heading color */
+.video h2 {
+  color: #F29057; /* Accent color */
+  margin-bottom: 1.5rem; /* Space below heading */
+}
+
+/* Video styling */
+video {
+  max-width: 100%; /* Make video responsive */
+  border-radius: 20px; /* Round corners */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Add shadow */
+}
+
+/* Footer section styling */
+footer {
+  background-color: #f9f9f9; /* Light background */
+  padding: 2rem; /* Add padding */
+  text-align: center; /* Center text */
+  color: #999; /* Light gray text */
+  font-size: 0.9rem; /* Smaller text */
+  border-top: 1px solid #eee; /* Light border on top */
+}
+
+/* Fade-in animation for elements */
+.fade-in {
+  opacity: 0; /* Start hidden */
+  transform: translateY(40px); /* Start lower */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+}
+
+/* Visible state for fade-in animation */
+.fade-in.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Return to original position */
+}
+
+/* History Box Specific Styles (for the history section) */
+.history-box {
+  background: linear-gradient(to right, #F9E0C9, #eeb0ff);  /* Gradient background */
+  padding: 30px; /* Add padding */
+  border-radius: 10px; /* Round corners */
+  margin-top: 30px; /* Space above */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Styling for history box heading */
+.history-box h4 {
+  color: #F29057;  /* Accent color */
+  font-size: 1.75rem; /* Large font size */
+  margin-bottom: 20px; /* Space below */
+  font-weight: 600; /* Bold heading */
+}
+
+/* History box paragraph styling */
+.history-box p {
+  color: #333; /* Dark text color */
+  font-size: 1.1rem; /* Slightly larger font */
+  line-height: 1.8; /* More line spacing */
+  margin-bottom: 20px; /* Space below */
+}
+
+/* Responsive image inside history box */
+.history-box img {
+  width: 100%;  /* Full width */
+  max-width: 700px;  /* Set max width */
+  height: auto;  /* Maintain aspect ratio */
+  border-radius: 10px; /* Round corners */
+  margin-bottom: 20px; /* Space below image */
+  display: block; /* Make image a block element */
+  margin-left: auto;
+  margin-right: auto; /* Center image */
+}
+
+/* Additional heading inside history box */
+.history-box h3 {
+  color: #F29057; /* Accent color */
+  font-size: 1.5rem; /* Medium font size */
+  margin-top: 20px; /* Space above */
+  font-weight: 600; /* Bold heading */
+}
